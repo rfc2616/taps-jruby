@@ -1,5 +1,5 @@
 require 'sequel'
-require 'sqlite3'
+#require 'sqlite3'
 require 'yaml'
 
 Sequel.datetime_class = DateTime

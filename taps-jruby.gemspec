@@ -68,12 +68,14 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<sinatra>, ["~> 1.0.0"])
       s.add_runtime_dependency(%q<rest-client>, [">= 1.4.0", "< 1.7.0"])
       s.add_runtime_dependency(%q<sequel>, ["~> 3.17.0"])
+      s.add_runtime_dependency(%q<activerecord-jdbcsqlite3-adapter>, ["~> 1.2"])
       s.add_runtime_dependency(%q<rack>, [">= 1.0.1"])
     else
       s.add_dependency(%q<json_pure>, [">= 1.2.0", "< 1.5.0"])
       s.add_dependency(%q<sinatra>, ["~> 1.0.0"])
       s.add_dependency(%q<rest-client>, [">= 1.4.0", "< 1.7.0"])
       s.add_dependency(%q<sequel>, ["~> 3.17.0"])
+      s.add_dependency(%q<activerecord-jdbcsqlite3-adapter>, ["~> 1.2"])
       s.add_dependency(%q<rack>, [">= 1.0.1"])
     end
   else
@@ -81,6 +83,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<sinatra>, ["~> 1.0.0"])
     s.add_dependency(%q<rest-client>, [">= 1.4.0", "< 1.7.0"])
     s.add_dependency(%q<sequel>, ["~> 3.17.0"])
+    s.add_dependency(%q<activerecord-jdbcsqlite3-adapter>, ["~> 1.2"])
     s.add_dependency(%q<rack>, [">= 1.0.1"])
   end
 end

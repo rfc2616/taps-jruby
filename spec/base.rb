@@ -22,5 +22,5 @@ class Bacon::Context
 end
 
 require 'taps/config'
-Taps::Config.taps_database_url = "sqlite://#{Tempfile.new('test.db').path}"
+Taps::Config.taps_database_url = "jdbc:sqlite://#{Tempfile.new('test.db').path}"
 Sequel.connect(Taps::Config.taps_database_url)

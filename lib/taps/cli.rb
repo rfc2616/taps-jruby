@@ -9,7 +9,7 @@ Taps::Config.taps_database_url = ENV['TAPS_DATABASE_URL'] || begin
   # this is dirty but it solves a weird problem where the tempfile disappears mid-process
   $__taps_database = Tempfile.new('taps.db')
   $__taps_database.open()
-  "sqlite://#{$__taps_database.path}"
+  "jdbc:sqlite://#{$__taps_database.path}"
 end
 
 module Taps
